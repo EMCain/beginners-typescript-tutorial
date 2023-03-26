@@ -1,6 +1,11 @@
 import { expect, it } from "vitest";
 
-export const addTwoNumbers = (params) => {
+interface paramType {
+  first: number,
+  second: number
+}
+
+export const addTwoNumbers = (params: paramType) => {
   return params.first + params.second;
 };
 
